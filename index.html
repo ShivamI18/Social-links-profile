@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      box-sizing: border-box;
+      color: hsl(0, 0%, 100%);
+    }
+
+    body {
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    .container {
+      height: 612px;
+      width: 408px;
+      background-color: hsl(0, 0%, 12%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+      display: grid;
+      grid-template-rows: 244px repeat(5, 1fr);
+      padding: 25px;
+      row-gap: 3px;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box span {
+      background-color: hsl(0, 0%, 20%);
+      display: flex;
+      width: 300px;
+      height: 45px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .box span:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+    }
+    .head {
+      /* border: solid white; */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      /* justify-items:normal ; */
+    }
+
+    .head img {
+      position: absolute;
+      height: 90px;
+      border-radius: 2000px;
+      top: 20px;
+    }
+
+    .text {
+      position: absolute;
+      bottom: -8px;
+      text-align: center;
+      padding: 8px 0;
+    }
+
+    .profilename {
+      padding: 5px 0;
+      font-size: 25px;
+    }
+
+    .place {
+      padding: 5px 0;
+      color: hsl(75, 94%, 57%);
+      font-size: 13px;
+    }
+
+    .about {
+      padding: 20px 0;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box head">
+      <img src="assets\images\avatar-jessica.jpeg" alt="#">
+      <div class="text">
+        <div class="profilename">Jessica Randall</div>
+        <div class="place">London, United Kingdom</div>
+        <div class="about">"Front-end developer and avid reader."</div>
+      </div>
+    </div>
+    <div class="box"><span>GitHub</span></div>
+    <div class="box"><span>Frontend Mentor</span></div>
+    <div class="box"><span>LinkedIn</span></div>
+    <div class="box"><span>Twitter</span></div>
+    <div class="box"><span>Instagram</span></div>
+  </div>
+
+
+
+  <!-- Jessica Randall
+  London, United Kingdom
+  
+  -->
+</body>
+
+</html>
